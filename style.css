@@ -1,0 +1,135 @@
+/* Default light theme colors */
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #080808;
+  --card-bg: #D6A99D;
+  --primary-color: #154d8a;
+}
+
+/* Dark theme overrides */
+body.dark-mode {
+  --bg-color: #1C352D;
+  --text-color: #000000;
+  --card-bg: #ECECBB;
+  --primary-color: #102E50;
+  
+}
+
+/* Reset and basic layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+   background-image:url(background.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  color: rgb(252, 252, 252);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#toggle-dark-mode {
+  background: rgb(253, 253, 253);
+  border: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Semester section */
+#semesters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.semester-card {
+  background-color: var(--card-bg);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(11, 112, 107, 0.1);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.semester-card:hover {
+  transform: scale(1.03);
+  background-color: var(--primary-color);
+  color: rgb(253, 252, 252);
+}
+
+/* File manager section */
+#file-manager {
+  padding: 20px;
+}
+
+
+h1{
+    margin: 10px;
+}
+
+a{
+    width: 50px;
+    background-color: rgb(184, 255, 228);
+    padding: 20px;
+    margin: 5px;
+    font-weight: bold;
+    line-height: 100px;
+    font-size: 24px;
+    
+     border-width: 2px;
+     border-color: #080808;
+     border-style: solid;
+     border-radius: 10px;
+     text-decoration: none;
+     color: #080808;
+}
+footer {
+  
+  background-color: var(--primary-color);
+ 
+  color: rgb(250, 248, 248);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding:  0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  margin: 0%;
+  padding-top: 10px;
+}
+
+h3{
+  padding: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+
+}
+one{
+  padding:0px;
+  margin: 0px;
+  height: 5px;
+
+
+}
