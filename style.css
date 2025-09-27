@@ -84,23 +84,28 @@ h1 {
 
 h1{
     margin: 10px;
+    transition: all 0.5s ease-in-out 0s;
 }
-
+h1:hover{
+  transform: translateX(50px);
+  color: #cbe66c;
+}
 a{
-    width: 50px;
-    background-color: rgb(184, 255, 228);
-    padding: 20px;
-    margin: 5px;
+   
+    
+  
+    padding: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: bold;
     line-height: 100px;
     font-size: 24px;
     
-     border-width: 2px;
-     border-color: #080808;
-     border-style: solid;
-     border-radius: 10px;
+     
+     border-radius: 10px; 
      text-decoration: none;
      color: #080808;
+    
 }
 footer {
   
@@ -132,4 +137,53 @@ one{
   height: 5px;
 
 
+}
+.home{
+  display: inline-block;
+  height: 100px;
+  color: #010000;
+  width: 150px;
+  border: 2px solid black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(145, 247, 208);
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 20px;
+  margin-bottom:30px ;
+  font-size: 20px;
+  
+  
+}
+div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+.home:hover{
+  
+  
+  transition: all 0.1s linear 0s;
+  transform: translate(20px,5px);
+  background-image: linear-gradient(150deg,#f37d16,#68ee14,#09db9c,#1147aa);
+
+}
+.home:active{
+ 
+  transform:skew(-3deg);
+  
+}
+a:hover{
+ 
+}
+a:active{
+  
+}
+h3:hover{
+  color: #68ee14;
+  font-style: italic;
+  transform: translateX(20px);
+  transform: scaleX(1.3);
 }

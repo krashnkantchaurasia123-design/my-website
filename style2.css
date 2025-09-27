@@ -28,13 +28,17 @@ header {
 h1 {
   margin: 0;
   font-size: 24px;
+  transition: all 0.5s ease-in-out 0s;
+}
+h1:hover{
+  transform: translateX(50px);
+  color: #cbe66c;
 }
 #file-manager {
   padding: 40px;
 }
 a{
     
-    background-color: rgb(0, 255, 255);
     padding: 8px;
     
     font-weight: bold;
@@ -44,6 +48,7 @@ a{
     text-decoration: none; 
       color: #080808;
        border-radius: 10px;
+       transition: all 0.1s ease-in-out 0s;
 }
 div{
     background-color: rgb(0, 255, 255);
@@ -60,4 +65,27 @@ div{
 }
 img{
     border-radius: 10px;
+}
+.home:hover{
+  
+  
+  
+
+}
+.home:active{
+ 
+ 
+  
+}
+div:hover{
+ transition: all 0.1s linear 0s;
+  transform: translate(20px,5px);
+  background-image: linear-gradient(150deg,#f37d16,#68ee14,#09db9c,#1147aa);
+}
+a:active{
+   transform:skew(-3deg);
+}
+a:hover{
+  transform: translateX(20px);
+  transform: skew(5deg);
 }
